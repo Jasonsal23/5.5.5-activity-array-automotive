@@ -84,7 +84,11 @@ class Vehicle {
         }
     }
 }
-
+class Car extends Vehicle{
+    constructor(make, model, year, color, mileage){
+        super(make, model, year, color, mileage)
+    }
+}
 //This exports things you want to use from this "module", more info in readme
 module.exports = {
     Vehicle
