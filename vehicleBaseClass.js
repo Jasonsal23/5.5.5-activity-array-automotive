@@ -94,7 +94,26 @@ class Car extends Vehicle{
         this.fuel=10;
         this.scheduleService=false;
     }
-    
+    loadPassenger(num){
+        if (this.passengers < this.maximumPassengers){
+            this.passengers =true
+        }else{
+            console.log('There is not enough space')
+        }
+
+    }
+    start(){
+        if (this.fuel > 0){
+            console.log('car started')
+        } else{
+            console.log('no gas')
+        }
+    }
+    scheduleService(){
+        if (this.mileage > 3000){
+            this.scheduleService=true;
+        }
+    }
 }
 //This exports things you want to use from this "module", more info in readme
 module.exports = {
